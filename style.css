@@ -322,3 +322,40 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+.floating-home-btn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 16px rgba(21, 101, 192, 0.18);
+  border-radius: 50%;
+}
+
+.floating-home-btn:hover svg circle {
+  fill: #003c8f;
+}
+
+.floating-home-btn svg {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .floating-home-btn {
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}

@@ -7,18 +7,20 @@
   <script defer src="script.js"></script>
 </head>
 <body>
-<nav class="navbar">
+
+<nav id="home" class="navbar">
   <div class="navbar-brand">
     <div class="navbar-title">Guilherme Carvalho</div>
     <div class="navbar-subtitle">Senior Software Developer & Ultra Marathon Runner</div>
   </div>
-  <div class="navbar-links">
+  <div class="navbar-links">    
     <a href="#about" class="topmenu">About Me</a>
     <a href="#skills" class="topmenu">Skills</a>
     <a href="#projects" class="topmenu">Projects</a>
     <a href="#recommendations" class="topmenu">Recommendations</a>
   </div>
 </nav>
+
 
 
 <section id="about" class="about-section">
@@ -147,5 +149,11 @@
     <span id="popup-message">Thanks for leaving a recommendation!</span>
     <button onclick="closePopup()">OK</button>
   </div>
+  <a href="#home" class="floating-home-btn" title="Back to top">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="48px" height="48px">
+    <circle cx="12" cy="12" r="12" fill="#1565c0"/>
+    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5" stroke="#fff"/>
+  </svg>
+</a>
 </body>
 </html>
