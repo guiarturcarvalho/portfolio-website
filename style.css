@@ -5,30 +5,57 @@ body {
   color: #222;
 }
 
-nav {
-  background: #2c3e50;
-  padding: 10px 0;
+.navbar {
   display: flex;
   align-items: center;
-  gap: 20px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  justify-content: space-between;
+  background: #1565c0; /* Blue, matches your Skills/Recommendations */
+  color: #fff;
+  padding: 18px 36px 18px 36px;
+  border-radius: 0 0 12px 12px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+}
+
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.navbar-subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 2px;
+  color: #e3f2fd;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 32px;
 }
 
 .topmenu {
-  color: #b8e994;
+  color: #fff;
   text-decoration: none;
-  padding: 8px 16px;
-  font-size: 18px;
-  transition: all 0.2s;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+  padding: 4px 0;
 }
 
 .topmenu:hover {
-  color: #fff;
+  color: #003c8f;
   font-weight: bolder;
   text-decoration: underline;
 }
+
 
 .profile_name {
   flex: 1;
